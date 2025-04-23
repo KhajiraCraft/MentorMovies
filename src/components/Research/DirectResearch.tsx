@@ -740,13 +740,14 @@ import { useTaskStore } from "@/store/task";
 import { useSettingStore } from "@/store/setting";
 import { useGlobalStore } from "@/store/global";
 import useAiProvider from "@/hooks/useAiProvider";
-import MovieList from "@/components/Research/MovieList";
+// import MovieList from "@/components/Research/MovieList";
 
 type Billionaire = {
   personName: string;
   rank: number;
 };
 
+const MovieList = () => null;
 function DirectResearch() {
   const { deepResearch, writeFinalReport, status } = useDeepResearch();
   const { formattedTime, start, stop } = useAccurateTimer();
