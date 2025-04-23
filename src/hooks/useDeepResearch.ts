@@ -176,7 +176,7 @@ function useDeepResearch() {
                   processSearchResultPrompt(
                     item.query,
                     item.researchGoal,
-                    sources
+                    
                   ),
                   getResponseLanguagePrompt(language),
                 ].join("\n\n"),
@@ -282,7 +282,7 @@ function useDeepResearch() {
       model: createProvider(thinkingModel),
       system: [getSystemPrompt(), getOutputGuidelinesPrompt()].join("\n\n"),
       prompt: [
-        writeFinalReportPrompt(query, learnings, requirement),
+        writeFinalReportPrompt(query, learnings),
         getResponseLanguagePrompt(language),
       ].join("\n\n"),
       experimental_transform: smoothStream({ delayInMs: 0 }),
