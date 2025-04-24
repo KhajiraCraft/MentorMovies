@@ -622,7 +622,7 @@ export default function SelectBillionaire({ onSelect }: Props) {
       {/* Grid */}
       {paginated.length === 0 ? (
         <p className="text-center text-gray-400 italic animate-pulse mt-6">
-          No billionaires found. Try another filter.
+          Loading billionaires...
         </p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
